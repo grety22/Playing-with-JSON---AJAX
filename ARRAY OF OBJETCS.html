@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array of objects - js</title>
+</head>
+<body>
+<script>
+    var array = [
+        {
+            car:"honda",
+            name:"Jimmy",
+            kids:['susan','hilary','lorein'],
+            age:55,
+            
+        },
+        {
+            car:"nissan",
+            name:"Mario",
+            kids:['dali','tom'],
+            age:40
+        },
+        {
+            car:"lexus",
+            name:"miranda",
+            kids:[''],
+            age:25
+        },   
+//        esterbina es abuela so ... she has also grandkids
+        {
+            car:"lada",
+            name:"esterbina",
+            kids:[
+                {
+                    hijas:["carmen","omi","olgui"],
+                    nietas:["myself","bu","tuti"]
+                },
+                {
+                    hijos:["carlos","felipe"],
+                    nietos:["mykid1","mykid2"]
+                }
+            
+            ],
+            age:25,
+           
+        }    
+    ];
+//    foreach array method    
+    array.forEach(function(index){
+        console.log(index.car+" "+index.name+" "+index.age);
+    });
+    
+//    accessing to an element inside the array of objects
+//    to get third jimmy kid name
+    alert(array[0].kids[2]);
+//    accessing to mykid2
+    alert(array[3].kids[1].nietos[1]);
+    
+</script>
+      
+</body>
+</html>
